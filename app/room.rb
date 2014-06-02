@@ -1,3 +1,4 @@
+require_relative 'screen.rb'
 class Room
 
 	def initialize(description)

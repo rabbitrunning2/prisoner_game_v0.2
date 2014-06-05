@@ -1,10 +1,11 @@
 class Room
 
-	def initialize(description)
+attr_accessor :description, :game_state, :items
+
+	def initialize(description, items, game_state)
 		@description = description
+		@items = items
+		@game_state = game_state
 	end
-	
-	def start
-		Screen.new(@description)
-	end
+
 end

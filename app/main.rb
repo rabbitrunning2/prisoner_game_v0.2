@@ -1,9 +1,11 @@
+require_relative 'room.rb'
+require_relative 'screen.rb'
+
 class Main
 	def initialize
-		while(room)
-			next_room = room
-			next_room.start
-		end
+		room = Room.new("You are in a room", "piece of metal", "start")
+		Screen.new(room.description)
 	end
 	
 end
+Main.new

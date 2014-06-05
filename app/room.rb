@@ -1,3 +1,4 @@
+require_relative 'screen.rb'
 class Room
 
 attr_accessor :description, :game_state, :items
